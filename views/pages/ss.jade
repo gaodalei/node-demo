@@ -1,0 +1,6 @@
+extend ../layout
+block content
+		.pics
+			each item in movies
+				img(src="#{item.poster}",alt="#{item.title}")
+				

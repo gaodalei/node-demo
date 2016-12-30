@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    - var name = 'Jade'
+    title= name
+    meta(charset="utf-8")
+    link(rel="stylesheet", type="text/css" href="/stylesheets/style.css")
+
+  body
+    h1 Jade - node template engine
+    #container.col
+      if name === 'Jade'
+        p #{name} is very cool
+      else
+        p Get on Jade
+    footer
+      p.
+                      首页
